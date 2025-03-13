@@ -30,7 +30,7 @@ python test.py
 
 ## Dataset
 
-Ours method used 3 popular SF-DAOD benchmarks:
+Our method used 3 popular SF-DAOD benchmarks:
 
 - city2foggy: Cityscapes (source domain) → FoggyCityscapes with foggy level 0.02 (target domain).
 - sim2city: Sim10k (source domain) → Cityscapes with `car` class (target domain).
