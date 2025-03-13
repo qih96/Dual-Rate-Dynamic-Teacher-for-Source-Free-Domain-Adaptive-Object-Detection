@@ -179,14 +179,10 @@ def teaching(model_stu, device):
     #     model_stu, model_tch, optimizer, init_epoch = resume_for_training(model_stu, model_tch, optimizer, 'outputs/def-detr-base/city2foggy/teaching_mask_1/model_last_all.pth', device)
     #     init_epoch += 1
 
-    # Build init student model
-    init_model_stu = build_teacher(args, model_stu, device)
-    # print(init_model_stu.keys())
     # Prepare model for optimization
     if args.distributed:
         model_stu = DistributedDataParallel(model_stu, device_ids=[args.gpu], find_unused_parameters=False)
         model_tch = DistributedDataParallel(model_tch, device_ids=[args.gpu])
-        init_model_stu = DistributedDataParallel(init_model_stu, device_ids=[args.gpu])
     # Build criterion, optimizer and lr_scheduler
     criterion = build_criterion(args, device)
     criterion_pseudo = build_criterion(args, device)
@@ -197,9 +193,6 @@ def teaching(model_stu, device):
     # Record the best mAP
     ap50_best = -1.0
 
-    # Initialize buffers
-    res_dict = {'stu_ori': [], 'stu_now': [], 'update_iter': []}
-
     # Initialize masking
     masking = Masking(block_size=args.block_size, masked_ratio=args.masked_ratio)
 
@@ -209,7 +202,7 @@ def teaching(model_stu, device):
     if is_main_process():
         
         if not os.path.exists(fig_dir):
-            os.mkdir(fig_dir)
+            os.makedirs(fig_dir)
     
     for epoch in range(init_epoch, args.epoch):
         # Set the epoch for the sampler
@@ -219,7 +212,6 @@ def teaching(model_stu, device):
             loss_train, loss_target_dict = train_one_epoch_teaching_mask(
                 student_model=model_stu,
                 teacher_model=model_tch,
-                init_student_model=init_model_stu,
                 or_student_model=or_model_stu,
                 criterion_pseudo=criterion_pseudo,
                 criterion_pseudo_weak=criterion_pseudo_weak,

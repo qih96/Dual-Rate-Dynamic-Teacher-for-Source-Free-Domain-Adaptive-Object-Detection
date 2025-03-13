@@ -21,11 +21,9 @@ from typing import List
 from datasets.masking import Masking
 from scipy.optimize import linear_sum_assignment
 from utils.box_utils import box_cxcywh_to_xyxy, generalized_box_iou
-from utils import selective_reinitialize
 import random
 import torchvision
 from utils.box_utils import box_cxcywh_to_xyxy
-from einops import rearrange
 from utils.visualizer import COCOVisualizer
 import torch.nn.functional as F
 
@@ -208,7 +206,6 @@ def train_one_epoch_teaching_standard(student_model: torch.nn.Module,
 
 def train_one_epoch_teaching_mask(student_model: torch.nn.Module,
                                   teacher_model: torch.nn.Module,
-                                  init_student_model: torch.nn.Module,
                                   or_student_model: torch.nn.Module,
                                   criterion_pseudo: torch.nn.Module,
                                   criterion_pseudo_weak: torch.nn.Module,
@@ -234,7 +231,6 @@ def train_one_epoch_teaching_mask(student_model: torch.nn.Module,
     start_time = time.time()
     student_model.train()
     teacher_model.train()
-    init_student_model.train()
     or_student_model.train()
     criterion_pseudo.train()
     criterion_pseudo_weak.train()
@@ -292,12 +288,12 @@ def train_one_epoch_teaching_mask(student_model: torch.nn.Module,
                 midd = p1['scores'].shape[0]
                 training_count += midd
 
-            target_student_out = student_model(target_student_images, target_masks, aux_object_query=None)
+            target_student_out = student_model(target_student_images, target_masks)
             # loss from pseudo labels of current teacher
             target_loss, target_loss_dict = criterion_pseudo(target_student_out, training_labels)
 
             masked_target_images = masking(target_student_images)
-            masked_target_student_out = student_model(masked_target_images, target_masks, aux_object_query=None)
+            masked_target_student_out = student_model(masked_target_images, target_masks)
             masked_target_loss, masked_target_loss_dict = criterion_pseudo(masked_target_student_out, training_labels)
 
             loss = target_loss + coef_masked_img * masked_target_loss
@@ -347,27 +343,7 @@ def train_one_epoch_teaching_mask(student_model: torch.nn.Module,
                     for key, value in state_dict.items():
                         state_dict[key] = alpha_ema * value + (1 - alpha_ema) * student_state_dict[key].detach()
                 teacher_model.load_state_dict(state_dict)
-
-                # state_dict = ema_teacher_model.state_dict()
-                # for key, value in state_dict.items():
-                #     state_dict[key] = alpha_ema * value + (1 - alpha_ema) * student_state_dict[key].detach()
-                # ema_teacher_model.load_state_dict(state_dict)
-
             state_list = {}
-
-
-        # if (iter + 1) % 200 == 0:
-        #     with torch.no_grad():
-        #         ema_teacher_out = ema_teacher_model(target_teacher_images, target_masks)
-        #         ema_pseudo_labels = get_pseudo_labels(ema_teacher_out['logit_all'][-1], ema_teacher_out['boxes_all'][-1], thresholds, is_nms=False)
-        # if is_main_process() and (iter + 1) % 200 == 0:
-            
-        #     i = random.choice([k for k in range(target_teacher_images.shape[0])])
-        #     vis_function(vslzr, category_info, pseudo_labels[i], target_teacher_images[i], fig_dir, 'tea')
-        #     vis_function(vslzr, category_info, pseudo_labels_aux[i], target_teacher_images[i], fig_dir, 'stu')
-        #     # vis_function(vslzr, category_info, ema_pseudo_labels[i], target_teacher_images[i], fig_dir, 'ema')
-        #     vis_function(vslzr, category_info, mix_pseudo_labels[i], target_teacher_images[i], fig_dir, 'mix')
-
 
         # Data pre-fetch
         target_images, target_masks, _ = target_fetcher.next()

@@ -1,10 +1,25 @@
-Dual-Rate Dynamic Teacher for Source-Free Domain Adaptive Object Detection
+# Dual-Rate Dynamic Teacher for Source-Free Domain Adaptive Object Detection
+
+The core contribution is AEMA, which update teacher parameters in asynchronous manner.
+<!-- ![AEMA](docs/AEMA.png =100x "")
+ -->
+ <div align="center">
+<img src="./docs/AEMA.png" width = "250" height = "200" alt="图片名称" align=center />
+</div>
+
+The framework of the proposed Dual-Rate Dynamic Teacher in the following figure.
+
+<!-- ![DDT](docs/framework.png) -->
+ <div align="center">
+<img src="./docs/framework.png" width = "400" height = "200" alt="图片名称" align=center />
+</div>
 
 ## Environment Setup
 
 ```bash
 conda create -n ddt python=3.8
 conda activate ddt
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
 
 # Compiling and testing Deformable DETR CUDA operators
@@ -44,3 +59,4 @@ Ours method used 3 popular SF-DAOD benchmarks:
 ```bash
 bash configs/def-detr-base/city2foggy/teaching_mask_ddt.sh
 ```
+The training log file of city2foggy (best mAP = 45.9) is available at [log file](docs/city2foggy_log.txt)

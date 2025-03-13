@@ -1,0 +1,336 @@
+
+Teaching epoch 0 : [ 100/371 ] total loss: [1.5120429]
+Teaching epoch 0 : [ 200/371 ] total loss: [2.7345898]
+Teaching epoch 0 : [ 300/371 ] total loss: [1.5134548]
+Teaching epoch 0 finished. Time cost: 0:11:08 Epoch loss: [2.0275333], extra: 1730.0,training: 26494.0
+Accumulating evaluation results...
+DONE (t=0.54s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.3502107403436563
+	AP of category [person]:		0.4471286357013954
+	AP of category [car]:		0.5649193514525023
+	AP of category [train]:		0.08344851215867712
+	AP of category [rider]:		0.46860280070948523
+	AP of category [truck]:		0.1752219926657942
+	AP of category [motorcycle]:		0.290401761915838
+	AP of category [bicycle]:		0.43465657833642524
+	AP of category [bus]:		0.33730628980913324
+Evaluation finished. Time cost: 0:01:12
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.3502107403436563
+Teaching epoch 1 : [ 100/371 ] total loss: [1.1350658]
+Teaching epoch 1 : [ 200/371 ] total loss: [2.0044847]
+Teaching epoch 1 : [ 300/371 ] total loss: [1.3560493]
+Teaching epoch 1 finished. Time cost: 0:11:19 Epoch loss: [1.863006], extra: 968.0,training: 29113.0
+Accumulating evaluation results...
+DONE (t=0.54s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.3872822936510145
+	AP of category [person]:		0.471457368321854
+	AP of category [car]:		0.6048717050844213
+	AP of category [train]:		0.17652096491693928
+	AP of category [rider]:		0.4875502932833102
+	AP of category [truck]:		0.19603233691951388
+	AP of category [motorcycle]:		0.3292369786203535
+	AP of category [bicycle]:		0.4623221400346182
+	AP of category [bus]:		0.3702665620271059
+Evaluation finished. Time cost: 0:01:12
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.3872822936510145
+Teaching epoch 2 : [ 100/371 ] total loss: [0.9316257]
+Teaching epoch 2 : [ 200/371 ] total loss: [1.471595]
+Teaching epoch 2 : [ 300/371 ] total loss: [1.6883962]
+Teaching epoch 2 finished. Time cost: 0:11:30 Epoch loss: [1.7822744], extra: 878.0,training: 30888.0
+Accumulating evaluation results...
+DONE (t=0.54s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4064595087464387
+	AP of category [person]:		0.48009384597337373
+	AP of category [car]:		0.6237153398489781
+	AP of category [train]:		0.21607873936351848
+	AP of category [rider]:		0.5046467386571705
+	AP of category [truck]:		0.20928921519319543
+	AP of category [motorcycle]:		0.34030488999507263
+	AP of category [bicycle]:		0.4787226344819796
+	AP of category [bus]:		0.39882466645822123
+Evaluation finished. Time cost: 0:01:13
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.4064595087464387
+Teaching epoch 3 : [ 100/371 ] total loss: [1.2214482]
+Teaching epoch 3 : [ 200/371 ] total loss: [2.2342024]
+Teaching epoch 3 : [ 300/371 ] total loss: [1.7452413]
+Teaching epoch 3 finished. Time cost: 0:11:41 Epoch loss: [1.7796174], extra: 735.0,training: 31997.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4169120424201961
+	AP of category [person]:		0.4845662043286384
+	AP of category [car]:		0.6357989053874821
+	AP of category [train]:		0.24291540164657
+	AP of category [rider]:		0.5116733754850267
+	AP of category [truck]:		0.2235184708670998
+	AP of category [motorcycle]:		0.34370775571843587
+	AP of category [bicycle]:		0.4827065341878049
+	AP of category [bus]:		0.41040969174051095
+Evaluation finished. Time cost: 0:01:11
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.4169120424201961
+Teaching epoch 4 : [ 100/371 ] total loss: [0.90899336]
+Teaching epoch 4 : [ 200/371 ] total loss: [1.8488221]
+Teaching epoch 4 : [ 300/371 ] total loss: [2.052622]
+Teaching epoch 4 finished. Time cost: 0:11:44 Epoch loss: [1.7604631], extra: 764.0,training: 33005.0
+Accumulating evaluation results...
+DONE (t=0.63s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.42565482320645986
+	AP of category [person]:		0.48530805820567147
+	AP of category [car]:		0.6416606889563884
+	AP of category [train]:		0.2802910349212038
+	AP of category [rider]:		0.5119416074565116
+	AP of category [truck]:		0.2267957727536335
+	AP of category [motorcycle]:		0.35657343681433645
+	AP of category [bicycle]:		0.4823911009654607
+	AP of category [bus]:		0.42027688557847287
+Evaluation finished. Time cost: 0:01:12
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.42565482320645986
+Teaching epoch 5 : [ 100/371 ] total loss: [1.0943136]
+Teaching epoch 5 : [ 200/371 ] total loss: [2.3023572]
+Teaching epoch 5 : [ 300/371 ] total loss: [1.2920209]
+Teaching epoch 5 finished. Time cost: 0:11:40 Epoch loss: [1.7461848], extra: 615.0,training: 33526.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4344649023148438
+	AP of category [person]:		0.4852719728591531
+	AP of category [car]:		0.6457815995340475
+	AP of category [train]:		0.33507291615861096
+	AP of category [rider]:		0.5091564654518963
+	AP of category [truck]:		0.2435999508695209
+	AP of category [motorcycle]:		0.36075420707555217
+	AP of category [bicycle]:		0.48283492286846263
+	AP of category [bus]:		0.413247183701507
+Evaluation finished. Time cost: 0:01:11
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.4344649023148438
+Teaching epoch 6 : [ 100/371 ] total loss: [1.0612832]
+Teaching epoch 6 : [ 200/371 ] total loss: [1.6220932]
+Teaching epoch 6 : [ 300/371 ] total loss: [2.2381608]
+Teaching epoch 6 finished. Time cost: 0:11:40 Epoch loss: [1.7003226], extra: 675.0,training: 33935.0
+Accumulating evaluation results...
+DONE (t=0.53s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.44404354824042647
+	AP of category [person]:		0.48971091274912587
+	AP of category [car]:		0.6486654934138048
+	AP of category [train]:		0.348013855439598
+	AP of category [rider]:		0.5188946975773898
+	AP of category [truck]:		0.27419587766770076
+	AP of category [motorcycle]:		0.3625553984883952
+	AP of category [bicycle]:		0.47969812000274936
+	AP of category [bus]:		0.4306140305846481
+Evaluation finished. Time cost: 0:01:14
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.44404354824042647
+Teaching epoch 7 : [ 100/371 ] total loss: [1.1299002]
+Teaching epoch 7 : [ 200/371 ] total loss: [2.43273]
+Teaching epoch 7 : [ 300/371 ] total loss: [1.2894948]
+Teaching epoch 7 finished. Time cost: 0:11:35 Epoch loss: [1.7394267], extra: 737.0,training: 34433.0
+Accumulating evaluation results...
+DONE (t=0.53s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4405541228795969
+	AP of category [person]:		0.48805681986862526
+	AP of category [car]:		0.6524040094439439
+	AP of category [train]:		0.33069897021134537
+	AP of category [rider]:		0.5272770419970728
+	AP of category [truck]:		0.2610683334375705
+	AP of category [motorcycle]:		0.3606556209397848
+	AP of category [bicycle]:		0.481524777238232
+	AP of category [bus]:		0.4227474099002003
+Evaluation finished. Time cost: 0:01:27
+Best mAP50: 0.44404354824042647
+Teaching epoch 8 : [ 100/371 ] total loss: [0.8278208]
+Teaching epoch 8 : [ 200/371 ] total loss: [1.9154606]
+Teaching epoch 8 : [ 300/371 ] total loss: [2.0956407]
+Teaching epoch 8 finished. Time cost: 0:11:40 Epoch loss: [1.7115707], extra: 724.0,training: 34799.0
+Accumulating evaluation results...
+DONE (t=0.53s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.44628816368706553
+	AP of category [person]:		0.4913443538587364
+	AP of category [car]:		0.6524787268317692
+	AP of category [train]:		0.3647106522809794
+	AP of category [rider]:		0.526979249507303
+	AP of category [truck]:		0.2580724826983034
+	AP of category [motorcycle]:		0.36714233871883606
+	AP of category [bicycle]:		0.4809156475421303
+	AP of category [bus]:		0.4286618580584666
+Evaluation finished. Time cost: 0:01:10
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.44628816368706553
+Teaching epoch 9 : [ 100/371 ] total loss: [0.8828598]
+Teaching epoch 9 : [ 200/371 ] total loss: [1.8000389]
+Teaching epoch 9 : [ 300/371 ] total loss: [2.0171528]
+Teaching epoch 9 finished. Time cost: 0:11:41 Epoch loss: [1.6911392], extra: 695.0,training: 35185.0
+Accumulating evaluation results...
+DONE (t=0.68s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.44631016093922427
+	AP of category [person]:		0.49438734765943765
+	AP of category [car]:		0.6551956409343523
+	AP of category [train]:		0.35089005249884403
+	AP of category [rider]:		0.5302288117983435
+	AP of category [truck]:		0.2613341613196359
+	AP of category [motorcycle]:		0.37418022962074
+	AP of category [bicycle]:		0.4826165654522202
+	AP of category [bus]:		0.4216484782302206
+Evaluation finished. Time cost: 0:01:12
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.44631016093922427
+Teaching epoch 10 : [ 100/371 ] total loss: [0.866503]
+Teaching epoch 10 : [ 200/371 ] total loss: [1.4476192]
+Teaching epoch 10 : [ 300/371 ] total loss: [1.1440563]
+Teaching epoch 10 finished. Time cost: 0:11:39 Epoch loss: [1.639597], extra: 707.0,training: 35523.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.45134108303169296
+	AP of category [person]:		0.4969652929784673
+	AP of category [car]:		0.6551673566124396
+	AP of category [train]:		0.3832822567971082
+	AP of category [rider]:		0.5329810714689313
+	AP of category [truck]:		0.25330421765070893
+	AP of category [motorcycle]:		0.37976697176624724
+	AP of category [bicycle]:		0.48751709356302475
+	AP of category [bus]:		0.42174440341661645
+Evaluation finished. Time cost: 0:01:11
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.45134108303169296
+Teaching epoch 11 : [ 100/371 ] total loss: [1.0332611]
+Teaching epoch 11 : [ 200/371 ] total loss: [1.9599214]
+Teaching epoch 11 : [ 300/371 ] total loss: [1.810824]
+Teaching epoch 11 finished. Time cost: 0:11:38 Epoch loss: [1.6469172], extra: 668.0,training: 35867.0
+Accumulating evaluation results...
+DONE (t=0.53s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4539331322040991
+	AP of category [person]:		0.4961417861800342
+	AP of category [car]:		0.655929110576804
+	AP of category [train]:		0.3828874114115253
+	AP of category [rider]:		0.5318623198398298
+	AP of category [truck]:		0.24150504757553268
+	AP of category [motorcycle]:		0.3958414751151856
+	AP of category [bicycle]:		0.48847905003212566
+	AP of category [bus]:		0.4388188569017554
+Evaluation finished. Time cost: 0:01:12
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.4539331322040991
+Teaching epoch 12 : [ 100/371 ] total loss: [1.0581446]
+Teaching epoch 12 : [ 200/371 ] total loss: [1.6182876]
+Teaching epoch 12 : [ 300/371 ] total loss: [1.935749]
+Teaching epoch 12 finished. Time cost: 0:11:39 Epoch loss: [1.6485826], extra: 599.0,training: 36185.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4593983466916749
+	AP of category [person]:		0.4959140048080558
+	AP of category [car]:		0.6581501792855302
+	AP of category [train]:		0.4105953861341165
+	AP of category [rider]:		0.5348332439258362
+	AP of category [truck]:		0.24989874686266816
+	AP of category [motorcycle]:		0.40977173743256895
+	AP of category [bicycle]:		0.48640065304141145
+	AP of category [bus]:		0.4296228220432117
+Evaluation finished. Time cost: 0:01:14
+Saving checkpoints to outputs/def-detr-base/city2foggy/teaching_mask_1/model_best.pth
+Best mAP50: 0.4593983466916749
+Teaching epoch 13 : [ 100/371 ] total loss: [1.1421378]
+Teaching epoch 13 : [ 200/371 ] total loss: [1.5363102]
+Teaching epoch 13 : [ 300/371 ] total loss: [1.4547839]
+Teaching epoch 13 finished. Time cost: 0:11:36 Epoch loss: [1.6545267], extra: 663.0,training: 36667.0
+Accumulating evaluation results...
+DONE (t=0.53s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4519401467406645
+	AP of category [person]:		0.4949719031515127
+	AP of category [car]:		0.6577173986109471
+	AP of category [train]:		0.38005778599838014
+	AP of category [rider]:		0.5292287077183293
+	AP of category [truck]:		0.243769804086049
+	AP of category [motorcycle]:		0.39212469525633903
+	AP of category [bicycle]:		0.4834677846109949
+	AP of category [bus]:		0.43418309449276393
+Evaluation finished. Time cost: 0:01:18
+Best mAP50: 0.4593983466916749
+Teaching epoch 14 : [ 100/371 ] total loss: [0.6462696]
+Teaching epoch 14 : [ 200/371 ] total loss: [1.1732168]
+Teaching epoch 14 : [ 300/371 ] total loss: [1.6288649]
+Teaching epoch 14 finished. Time cost: 0:11:38 Epoch loss: [1.6200728], extra: 667.0,training: 36955.0
+Accumulating evaluation results...
+DONE (t=0.61s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4476156180020755
+	AP of category [person]:		0.4965209818734966
+	AP of category [car]:		0.6589865359679032
+	AP of category [train]:		0.3463209415070118
+	AP of category [rider]:		0.5224291563092688
+	AP of category [truck]:		0.24598445718763515
+	AP of category [motorcycle]:		0.39596301384275356
+	AP of category [bicycle]:		0.48611378549894
+	AP of category [bus]:		0.42860607182959465
+Evaluation finished. Time cost: 0:01:10
+Best mAP50: 0.4593983466916749
+Teaching epoch 15 : [ 100/371 ] total loss: [0.9657494]
+Teaching epoch 15 : [ 200/371 ] total loss: [1.4450725]
+Teaching epoch 15 : [ 300/371 ] total loss: [1.792534]
+Teaching epoch 15 finished. Time cost: 0:11:33 Epoch loss: [1.6378078], extra: 641.0,training: 37167.0
+Accumulating evaluation results...
+DONE (t=0.60s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4510100361054782
+	AP of category [person]:		0.49498919788125223
+	AP of category [car]:		0.6624769600558184
+	AP of category [train]:		0.37472548198958366
+	AP of category [rider]:		0.5229651364271308
+	AP of category [truck]:		0.2422802116048284
+	AP of category [motorcycle]:		0.38609864271451655
+	AP of category [bicycle]:		0.4877996198884472
+	AP of category [bus]:		0.4367450382822484
+Evaluation finished. Time cost: 0:01:13
+Best mAP50: 0.4593983466916749
+Teaching epoch 16 : [ 100/371 ] total loss: [0.86653626]
+Teaching epoch 16 : [ 200/371 ] total loss: [2.2803946]
+Teaching epoch 16 : [ 300/371 ] total loss: [1.8288743]
+Teaching epoch 16 finished. Time cost: 0:11:42 Epoch loss: [1.6282208], extra: 714.0,training: 37541.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.44843808287241826
+	AP of category [person]:		0.4913721248932478
+	AP of category [car]:		0.6643151038831527
+	AP of category [train]:		0.3674224647528691
+	AP of category [rider]:		0.5203620028546666
+	AP of category [truck]:		0.2574948257032793
+	AP of category [motorcycle]:		0.3811000251639876
+	AP of category [bicycle]:		0.48495955969982335
+	AP of category [bus]:		0.42047855602831996
+Evaluation finished. Time cost: 0:01:11
+Best mAP50: 0.4593983466916749
+Teaching epoch 17 : [ 100/371 ] total loss: [1.0127635]
+Teaching epoch 17 : [ 200/371 ] total loss: [1.3522078]
+Teaching epoch 17 : [ 300/371 ] total loss: [2.1448374]
+Teaching epoch 17 finished. Time cost: 0:11:39 Epoch loss: [1.651927], extra: 630.0,training: 37752.0
+Accumulating evaluation results...
+DONE (t=0.52s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4478039196738088
+	AP of category [person]:		0.49370337258083064
+	AP of category [car]:		0.665954564917744
+	AP of category [train]:		0.3834507874750609
+	AP of category [rider]:		0.516788627259299
+	AP of category [truck]:		0.24775857669658716
+	AP of category [motorcycle]:		0.38430533894748026
+	AP of category [bicycle]:		0.48602219172592515
+	AP of category [bus]:		0.4044478977875435
+Evaluation finished. Time cost: 0:01:12
+Best mAP50: 0.4593983466916749
+Teaching epoch 18 : [ 100/371 ] total loss: [0.9860921]
+Teaching epoch 18 : [ 200/371 ] total loss: [2.1041822]
+Teaching epoch 18 : [ 300/371 ] total loss: [1.3557972]
+Teaching epoch 18 finished. Time cost: 0:11:34 Epoch loss: [1.6457585], extra: 663.0,training: 38095.0
+Accumulating evaluation results...
+DONE (t=0.54s).
+Mean Average Precision (mAP) @ [ IoU=0.50 | area=all | max_dets=100 ] = 0.4417895970193223
+	AP of category [person]:		0.49262027905367567
+	AP of category [car]:		0.666521296017242
+	AP of category [train]:		0.3430341882114479
+	AP of category [rider]:		0.5166542215403922
+	AP of category [truck]:		0.23973862114669295
+	AP of category [motorcycle]:		0.3756351629267674
+	AP of category [bicycle]:		0.48584696526724497
+	AP of category [bus]:		0.41426604199111533
+Evaluation finished. Time cost: 0:01:11
+Best mAP50: 0.4593983466916749
