@@ -4,14 +4,14 @@ The core contribution is AEMA, which update teacher parameters in asynchronous m
 <!-- ![AEMA](docs/AEMA.png =100x "")
  -->
  <div align="center">
-<img src="./docs/AEMA.png" width = "250" height = "200" alt="图片名称" align=center />
+<img src="./docs/AEMA.png" width = "350" alt="图片名称" align=center />
 </div>
 
 The framework of the proposed Dual-Rate Dynamic Teacher in the following figure.
 
 <!-- ![DDT](docs/framework.png) -->
  <div align="center">
-<img src="./docs/framework.png" width = "400" height = "200" alt="图片名称" align=center />
+<img src="./docs/framework.png" width = "700" alt="图片名称" align=center />
 </div>
 
 ## Environment Setup
