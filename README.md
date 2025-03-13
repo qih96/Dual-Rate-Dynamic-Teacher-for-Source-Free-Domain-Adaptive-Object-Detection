@@ -1,13 +1,13 @@
 # Dual-Rate Dynamic Teacher for Source-Free Domain Adaptive Object Detection
 
-The core contribution is AEMA, which update teacher parameters in asynchronous manner.
+The core contribution is Asynchronous Exponential Moving Average (AEMA), which update teacher parameters in asynchronous manner.
 <!-- ![AEMA](docs/AEMA.png =100x "")
  -->
  <div align="center">
 <img src="./docs/AEMA.png" width = "350" alt="图片名称" align=center />
 </div>
 
-The framework of the proposed Dual-Rate Dynamic Teacher in the following figure.
+The framework of the proposed Dual-rate Dynamic Teacher (DDT) in the following figure.
 
 <!-- ![DDT](docs/framework.png) -->
  <div align="center">
